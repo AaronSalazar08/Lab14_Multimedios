@@ -1,6 +1,15 @@
 import 'dotenv/config';
 import express from 'express';
 
+import { imagenesHandler }  from './routes/imagenes.js';
+import { getAllHandler }     from './routes/albumes/getAll.js';
+import { getBySlugHandler } from './routes/albumes/getBySlug.js';
+import { getByGeneroHandler } from './routes/albumes/getByGenero.js';
+import { searchHandler }    from './routes/albumes/search.js';
+import { createHandler }    from './routes/albumes/create.js';
+import { updateHandler }    from './routes/albumes/update.js';
+import { deleteHandler }    from './routes/albumes/deleteAlbum.js';
+
 const app = express();
 const PORT = process.env.PORT ?? 4321;
 const HOST = process.env.HOST ?? 'localhost';
@@ -12,18 +21,28 @@ app.get('/', (req, res) => {
     nombre: 'DiscoStore API',
     descripcion: 'API REST para el catálogo de álbumes de una tienda de música',
     rutas: [
-      { metodo: 'GET',    ruta: '/albumes',        descripcion: 'Lista de slugs de todos los álbumes' },
+      { metodo: 'GET',    ruta: '/albumes',             descripcion: 'Lista de slugs de todos los álbumes' },
       { metodo: 'GET',    ruta: '/albumes?include=full', descripcion: 'Lista completa con todos los campos' },
-      { metodo: 'GET',    ruta: '/album/:slug',     descripcion: 'Detalle de un álbum' },
-      { metodo: 'GET',    ruta: '/genero/:genero',  descripcion: 'Slugs de álbumes de ese género' },
-      { metodo: 'GET',    ruta: '/search/:text',    descripcion: 'Búsqueda por texto (mín. 3 caracteres)' },
-      { metodo: 'POST',   ruta: '/albumes',         descripcion: 'Crea un nuevo álbum' },
-      { metodo: 'PUT',    ruta: '/album/:slug',     descripcion: 'Actualiza un álbum existente' },
-      { metodo: 'DELETE', ruta: '/album/:slug',     descripcion: 'Elimina un álbum' },
-      { metodo: 'GET',    ruta: '/imagenes/*',      descripcion: 'Imágenes estáticas' },
+      { metodo: 'GET',    ruta: '/album/:slug',          descripcion: 'Detalle de un álbum' },
+      { metodo: 'GET',    ruta: '/genero/:genero',       descripcion: 'Slugs de álbumes de ese género' },
+      { metodo: 'GET',    ruta: '/search/:text',         descripcion: 'Búsqueda por texto (mín. 3 caracteres)' },
+      { metodo: 'POST',   ruta: '/albumes',              descripcion: 'Crea un nuevo álbum' },
+      { metodo: 'PUT',    ruta: '/album/:slug',          descripcion: 'Actualiza un álbum existente' },
+      { metodo: 'DELETE', ruta: '/album/:slug',          descripcion: 'Elimina un álbum' },
+      { metodo: 'GET',    ruta: '/imagenes/*',           descripcion: 'Imágenes estáticas' },
     ],
   });
 });
+
+app.use('/imagenes', imagenesHandler);
+
+app.get('/albumes',          getAllHandler);
+app.get('/album/:slug',      getBySlugHandler);
+app.get('/genero/:genero',   getByGeneroHandler);
+app.get('/search/:text',     searchHandler);
+app.post('/albumes',         createHandler);
+app.put('/album/:slug',      updateHandler);
+app.delete('/album/:slug',   deleteHandler);
 
 // 404 catch-all
 app.use((req, res) => {
