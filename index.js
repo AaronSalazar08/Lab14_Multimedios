@@ -44,6 +44,14 @@ app.post('/albumes',         createHandler);
 app.put('/album/:slug',      updateHandler);
 app.delete('/album/:slug',   deleteHandler);
 
+// JSON parse error handler
+app.use((err, req, res, next) => {
+  if (err.type === 'entity.parse.failed') {
+    return res.status(400).json({ error: 'El cuerpo de la solicitud no es JSON válido' });
+  }
+  next(err);
+});
+
 // 404 catch-all
 app.use((req, res) => {
   res.status(404).json({ error: `Ruta "${req.path}" no encontrada` });
