@@ -1,0 +1,98 @@
+[
+  {
+    "titulo": "Thriller",
+    "artista": "Michael Jackson",
+    "genero": "Pop",
+    "anio": 1982,
+    "sello": "Epic",
+    "pistas": 9,
+    "imagen": "thriller.avif",
+    "slug": "thriller",
+    "resumen": "El álbum más vendido de la historia.",
+    "descripcion": "Thriller es el sexto álbum de estudio de Michael Jackson, publicado en 1982. Contiene éxitos mundiales como Billie Jean, Beat It y la canción que da nombre al disco. Es el álbum más vendido de todos los tiempos con más de 70 millones de copias."
+  },
+  {
+    "titulo": "Back in Black",
+    "artista": "AC/DC",
+    "genero": "Rock",
+    "anio": 1980,
+    "sello": "Atlantic",
+    "pistas": 10,
+    "imagen": "back-in-black.avif",
+    "slug": "back-in-black",
+    "resumen": "El regreso triunfal de AC/DC tras la muerte de Bon Scott.",
+    "descripcion": "Back in Black es el séptimo álbum de AC/DC, lanzado en 1980 como homenaje a su fallecido vocalista Bon Scott. Con Brian Johnson como nuevo cantante, el disco incluye canciones icónicas como Hells Bells, You Shook Me All Night Long y el tema titular. Es el segundo álbum más vendido de la historia."
+  },
+  {
+    "titulo": "The Dark Side of the Moon",
+    "artista": "Pink Floyd",
+    "genero": "Rock Progresivo",
+    "anio": 1973,
+    "sello": "Harvest",
+    "pistas": 10,
+    "imagen": "dark-side-of-the-moon.avif",
+    "slug": "dark-side-of-the-moon",
+    "resumen": "Una obra maestra del rock progresivo sobre la condición humana.",
+    "descripcion": "The Dark Side of the Moon es el octavo álbum de Pink Floyd, publicado en 1973. Explora temas como el tiempo, la codicia, el conflicto y la locura. Permaneció en la lista Billboard 200 durante más de 900 semanas y es uno de los discos más influyentes de la historia de la música."
+  },
+  {
+    "titulo": "Rumours",
+    "artista": "Fleetwood Mac",
+    "genero": "Rock",
+    "anio": 1977,
+    "sello": "Warner Bros.",
+    "pistas": 11,
+    "imagen": "rumours.avif",
+    "slug": "rumours",
+    "resumen": "Confesiones personales convertidas en pop-rock atemporal.",
+    "descripcion": "Rumours es el undécimo álbum de Fleetwood Mac, grabado mientras los miembros de la banda atravesaban rupturas sentimentales entre sí. Incluye Go Your Own Way, The Chain y Dreams. Ganó el Grammy al Álbum del Año en 1978 y ha vendido más de 40 millones de copias."
+  },
+  {
+    "titulo": "Abbey Road",
+    "artista": "The Beatles",
+    "genero": "Rock",
+    "anio": 1969,
+    "sello": "Apple",
+    "pistas": 17,
+    "imagen": "abbey-road.avif",
+    "slug": "abbey-road",
+    "resumen": "El último álbum grabado por los cuatro Beatles juntos.",
+    "descripcion": "Abbey Road es el undécimo álbum de The Beatles, publicado en 1969 y el último en ser grabado por los cuatro integrantes. Incluye Come Together, Something y el célebre medley del lado B. La portada con los cuatro cruzando la calle se convirtió en una de las imágenes más icónicas de la música."
+  },
+  {
+    "titulo": "Kind of Blue",
+    "artista": "Miles Davis",
+    "genero": "Jazz",
+    "anio": 1959,
+    "sello": "Columbia",
+    "pistas": 5,
+    "imagen": "kind-of-blue.avif",
+    "slug": "kind-of-blue",
+    "resumen": "El álbum de jazz más vendido de todos los tiempos.",
+    "descripcion": "Kind of Blue es el decimoséptimo álbum de Miles Davis, grabado en dos sesiones en 1959. Pionero del jazz modal, el disco cuenta con John Coltrane y Bill Evans entre sus músicos. So What y All Blues son dos de sus piezas más reconocidas. Es considerado el punto de entrada ideal al jazz."
+  },
+  {
+    "titulo": "Purple Rain",
+    "artista": "Prince",
+    "genero": "Pop",
+    "anio": 1984,
+    "sello": "Warner Bros.",
+    "pistas": 9,
+    "imagen": "purple-rain.avif",
+    "slug": "purple-rain",
+    "resumen": "La banda sonora que catapultó a Prince a la fama mundial.",
+    "descripcion": "Purple Rain es el sexto álbum de Prince y la banda sonora de la película homónima de 1984. Fusiona pop, funk, rock y R&B en canciones como When Doves Cry, Let's Go Crazy y la épica balada Purple Rain. Ganó dos Premios Óscar y vendió más de 25 millones de copias."
+  },
+  {
+    "titulo": "Nevermind",
+    "artista": "Nirvana",
+    "genero": "Grunge",
+    "anio": 1991,
+    "sello": "DGC",
+    "pistas": 12,
+    "imagen": "nevermind.avif",
+    "slug": "nevermind",
+    "resumen": "El disco que llevó el grunge al mainstream global.",
+    "descripcion": "Nevermind es el segundo álbum de Nirvana, publicado en 1991. Con Smells Like Teen Spirit como sencillo de apertura, el disco desplazó a Michael Jackson del número uno en Billboard y redefinió el rock de los años 90. Incluye también Come as You Are y Lithium."
+  }
+]
