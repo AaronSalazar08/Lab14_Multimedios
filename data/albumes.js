@@ -1,6 +1,6 @@
 import { DatabaseSync } from 'node:sqlite';
 
-const db = new DatabaseSync('data/albumes.db');
+const db = new DatabaseSync(process.env.ALBUMES_DB_PATH ?? 'data/albumes.db');
 
 export function getAll() {
   return db

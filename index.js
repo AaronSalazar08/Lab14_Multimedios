@@ -57,6 +57,10 @@ app.use((req, res) => {
   res.status(404).json({ error: `Ruta "${req.path}" no encontrada` });
 });
 
-app.listen(PORT, HOST, () => {
-  console.log(`DiscoStore API corriendo en http://${HOST}:${PORT}`);
-});
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, HOST, () => {
+    console.log(`DiscoStore API corriendo en http://${HOST}:${PORT}`);
+  });
+}
+
+export default app;
